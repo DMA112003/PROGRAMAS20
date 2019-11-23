@@ -1,0 +1,225 @@
+
+
+
+}
+
+
+import java.awt.*;
+import java.applet.Applet;
+public class BarrasDespl extends Applet{
+  Scrollbar vertical1,vertical2;
+  Scrollbar horizontal1,horizontal2;
+  public void init() {
+    vertical1=new Scrollbar( Scrollbar.VERTICAL,0,1,0,255);
+    vertical2=new Scrollbar( Scrollbar.VERTICAL,0,1,0,255);
+    horizontal1=new Scrollbar( Scrollbar.Horizontal,0,1,0,255);
+    horizontal2=new Srollbar( Scrollbar.Horizontal,0,1,0,255);
+    add(vertical1);
+    add(vertical2);
+    add(horizontal1);
+    add(horizontal2);
+  }
+//applet CampoTexto.java
+import java.awt.*;
+import java.applet.*;
+
+public class CampoTexto extends Applet{
+  
+  public Label mensaje1=new Label("Nombre");
+  public Label mensaje2=new Label("Apellido");
+  public Label mensaje3=new Label("Direccion");
+  
+  public void init(){
+    
+    add(mensaje1);
+    add(new TextField(25));//25-número de caracteres en el campo
+    add(mensaje2);
+    add(new TextField(25));
+    add(mensaje3);
+    add(new TextField(35));
+  }
+
+i
+import java.applet.*;
+public class ColoresFuentes extends Applet{
+  public void paint (Graphics g){
+    Font fuentes1=new Font("Arial",Font.BOLD,16);
+    g.setFont(fuentes1);
+    g.setColor (Color.blue);
+    g.drawString("Escribo con azul",10,20);
+    
+ Font fuentes2=new Font("TimesRoman",Font.ITALIC,20);
+    g.setFont(fuentes2);
+    g.setColor (Color.red);
+    g.drawString("Escribo con rojo",10,60);
+    
+    Font fuentes3=new Font("Helvetica",Font.PLAIN,24);
+    g.setFont(fuentes3);
+    g.setColor(Color.green);
+    g.drawString("Escribo con verde",10,100);
+    Font fuentes4=new Font("Dialog",Font.ITALIC,26);
+    g.setFont(fuentes4);
+    g. gris",10,140);
+                           }
+setColor(Color.gray);
+    g.drawString("Escribo con 
+/
+//appletEjemploBorderLayout.java
+import java.awt.*;
+import java.applet.*;
+public class EjemploBorderLayout extends Applet{
+  GridBagLayout
+  CardLayout;
+  
+  public Button add=new Button("North,Boton1");
+  public Button add=new Button("South,Boton2");
+  public Button add=new Button("East,Boton3");
+  public Button add=new Button("West,Boton4");
+  public Button add=new Button("Center,Boton5");
+  public void init();
+}
+//applet EjemploChoice.java
+import java.awt.*;
+import jaa.applet.*;
+
+public class EjemploChoice extends Applet{
+  public Choice menu=new Choice();
+  public Label mensaje=new Label("Elije lo que quieres comer:");
+  public void init(){
+    menu.addltem("Pollo");
+    menu.addltem("Tacos");
+    menu.addltem("Torta");
+    menu.addltem("Guisado");
+    menu.addltem("Marisco");
+    add(mensaje);
+    add(menu);
+  }
+}
+   
+                  
+//applet EjemploFlowLayout.java
+import java.awt.*;
+import java.applet.*;
+
+public class EjemploFlowLayout extends Applet{
+  
+  public Button boton1=new Button("Accion 1");
+  public Button boton2=new Button("Accion 2");
+  public Button boton3=new Button("Accion 3");
+  public Button boton4=new Button("Accion 4");
+  public Button boton5=new Button("Accion 5");
+  public Button boton6=new Button("Accion 6");
+  public Button boton7=new Button("Accion 7");
+  
+  public void init(){
+    setLayout(new FlowLayout());//define el deseño de tipo FlowLayout
+    add(boton1);
+    add(boton2);
+    add(boton3);
+    add(boton4);
+    add(boton5);
+    add(boton6);
+    add(boton7);}
+}
+
+
+
+
+
+//appletEjemploBorderLayout.java
+import java.awt.*;
+import java.applet.*;
+public class EjemploBorderLayout extends Applet{
+  GridBagLayout
+  CardLayout;
+  
+  public Button add=new Button("North,Boton1");
+  public Button add=new Button("South,Boton2");
+  public Button add=new Button("East,Boton3");
+  public Button add=new Button("West,Boton4");
+  public Button add=new Button("Center,Boton5");
+  public void init();
+}
+
+
+
+
+//public class EjemploBorderLayput extends Applet{
+import java.awt.*;
+import java.applet.*;
+
+public class EjemploFlowLayout2 extends Applet{
+  
+  public Button boton1=new Button("Accion 1");
+  public Button boton2=new Button("Accion 2");
+  public Button boton3=new Button("Accion 3");
+  public Button boton4=new Button("Accion 4");
+  public Button boton5=new Button("Accion 5");
+  public Button boton6=new Button("Accion 6");
+  public Button boton7=new Button("Accion 7");
+  
+  public void init(){
+    setLayout(new GridLayout(2,4));/*los argumentos determinan el numero de filas y columnas y los siguientes dos pares(si hay)la separación horizontal y vertical entre los objetos.*/
+    add(boton1);
+    add(boton2);
+    add(boton3);
+    add(boton4);
+    add(boton5);
+    add(boton6);
+    add(boton7);}
+
+
+
+	
+    //applet EscogePartido.java
+import java.awt.*;
+import java.applet.*;
+public class EscogePartido extends Applet{
+  CheckboxGroup partidos=new CheckboxGroup();
+  Checkbox PRI=new Checkbox("PRI",partidos,false);
+  Checkbox PAN=new Checkbox("PAN",partidos,false);
+  Checkbox PRD=new Checkbox("PRD",partidos,false);
+  Checkbox Otros=new Checkbox("otros",partidos,true);
+  public Label mensaje=new Label("Escoge el partido para por el cual vas a votar");
+  public void init(){
+    add(mensaje);
+    add(PRI);
+    add(PAN);
+    add(PRD);
+
+
+//applet TeclasPrecionadas.java
+import java.awt.*;
+import java.awt.event.*;
+public class TeclasPresionadas extends Applet
+                                      implements keyListener{
+  private int cout=O;
+  public void init(){
+    setBackground(Color.yellow);
+    requesetFocus();
+    addKeyListener(this);
+  }
+  public void paint(Graphics g){
+    g.drawString("El numero de teclas presionadas es:"+
+                 getCount(),10,50);
+  }
+  public void keyPressed(KeyEvent e){
+    increaseCount();
+    repaint();
+  }
+  public void keyRealeased(KeyEvent e){}
+  public void keyTyped(KeyEvent e){}
+  public synchronized int getCount(){
+    return count;
+  }
+  public synchronized void increaseCount(){
+  }
+}
+
+
+
+
+    add(Otros);
+  }
+
+
